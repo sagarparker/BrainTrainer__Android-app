@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/sb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:onClick="start"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/but1" />
+
+    <TextView
+        android:id="@+id/starttext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerInParent="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="39dp"
+        android:text="START"
+        android:textSize="50sp"
+        android:visibility="visible"
+        app:fontFamily="sans-serif-black" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="10dp"
+
+
+        android:layout_marginTop="26dp"
+        android:alpha="0"
+        android:text="TIME:30s"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:visibility="invisible"
+        app:fontFamily="sans-serif-black" />
+
+    <TextView
+        android:id="@+id/right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="10dp"
+
+
+        android:alpha="0"
+        android:text="RIGHT:0"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:visibility="invisible"
+        app:fontFamily="sans-serif-black" />
+
+    <TextView
+        android:id="@+id/problem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="100dp"
+        android:alpha="0"
+        android:text="10 + 20"
+        android:textColor="@android:color/white"
+        android:textSize="50sp"
+        android:visibility="invisible"
+        app:fontFamily="sans-serif-black" />
+
+    <GridLayout
+        android:layout_width="400dp"
+        android:layout_height="210dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="200dp"
+        android:columnCount="2"
+        android:rowCount="2">
+
+        <Button
+            android:id="@+id/an1"
+            android:layout_width="170dp"
+            android:layout_height="100dp"
+            android:layout_row="0"
+            android:layout_column="0"
+
+            android:layout_marginLeft="10dp"
+            android:alpha="0"
+            android:background="@drawable/round"
+            android:onClick="choice"
+            android:tag="0"
+            android:text="Button"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/an2"
+            android:layout_width="170dp"
+            android:layout_height="100dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_marginLeft="15dp"
+            android:alpha="0"
+            android:background="@drawable/round"
+            android:onClick="choice"
+            android:tag="1"
+            android:text="Button"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/an3"
+            android:layout_width="170dp"
+            android:layout_height="103dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:alpha="0"
+            android:background="@drawable/round"
+            android:onClick="choice"
+            android:tag="2"
+            android:text="Button"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/an4"
+            android:layout_width="170dp"
+            android:layout_height="103dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="3dp"
+            android:alpha="0"
+            android:background="@drawable/round"
+            android:onClick="choice"
+            android:tag="3"
+            android:text="Button"
+            android:visibility="invisible" />
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="430dp"
+        android:alpha="0"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        app:fontFamily="sans-serif-black" />
+
+    <TextView
+        android:id="@+id/wrong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="10dp"
+
+        android:alpha="0"
+        android:text="WRONG:0"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:visibility="invisible"
+        app:fontFamily="sans-serif-black" />
+
+    <Button
+        android:id="@+id/playagain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="21dp"
+        android:background="@drawable/round"
+        android:onClick="playag"
+        android:text="PLAY AGAIN"
+        android:visibility="invisible" />
+
+</RelativeLayout>
